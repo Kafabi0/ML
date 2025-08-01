@@ -6,7 +6,8 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = "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"
+# API_KEY = "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"
+API_KEY = os.getenv("API_KEY")
 
 chat_history = [
     {
